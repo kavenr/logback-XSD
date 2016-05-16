@@ -109,6 +109,7 @@
 			<xsd:element name="prudent" minOccurs="0" maxOccurs="1" type="xsd:boolean"/>
 			<xsd:element name="layout" minOccurs="0" maxOccurs="1" type="Layout"/>
 			<xsd:element name="rollingPolicy" minOccurs="0" maxOccurs="1" type="RollingPolicy"/>
+			<xsd:element name="queueSize" minOccurs="0" maxOccurs="1" type="xsd:int"/>
       <xsd:any namespace="##other" processContents="skip" minOccurs="0" maxOccurs="unbounded"/>
 		</xsd:choice>
 		<xsd:attribute name="name" type="xsd:string" use="required"/>

@@ -110,6 +110,8 @@
 			<xsd:element name="layout" minOccurs="0" maxOccurs="1" type="Layout"/>
 			<xsd:element name="rollingPolicy" minOccurs="0" maxOccurs="1" type="RollingPolicy"/>
 			<xsd:element name="queueSize" minOccurs="0" maxOccurs="1" type="xsd:int"/>
+			<xsd:element name="discardingThreshold" minOccurs="0" maxOccurs="1" type="xsd:int"/>
+			<xsd:element name="appender-ref" minOccurs="0" maxOccurs="unbounded" type="AppenderRef"/>
       <xsd:any namespace="##other" processContents="skip" minOccurs="0" maxOccurs="unbounded"/>
 		</xsd:choice>
 		<xsd:attribute name="name" type="xsd:string" use="required"/>
